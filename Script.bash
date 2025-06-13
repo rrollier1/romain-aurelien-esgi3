@@ -15,6 +15,10 @@ if [ ! -d "$CHEMIN" ]; then
   exit 2
 fi
 
+# ajout des droits de lecture uniquement sur le CHEMIN
+chmod -R a+r "$CHEMIN"
+echo "Droits de lecture ajoutés à $CHEMIN et ses sous-dossiers."
+
 # Parcours récursif pour trouver tous les dossiers
 echo "Dossiers trouvés dans $CHEMIN :"
 find "$CHEMIN" -type d
