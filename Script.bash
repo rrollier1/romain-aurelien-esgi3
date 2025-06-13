@@ -17,7 +17,7 @@ fi
 
 # Fichier de log
 LOG_FILE="modifications.log"
-> "$LOG_FILE"  # Réinitialise le log
+: > "$LOG_FILE"  # Réinitialise le log
 
 echo "Parcours des dossiers dans : $CHEMIN"
 echo "Fichier de log : $LOG_FILE"
