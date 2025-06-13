@@ -11,7 +11,7 @@ fi
 
 touch "$ARCHIVE_FILE"
 
-> "$TEMP_FILE"
+: > "$TEMP_FILE"
 
 while IFS= read -r line; do
   log_date=$(echo "$line" | cut -d '|' -f1 | xargs)
